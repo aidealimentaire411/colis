@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nl!l*u@v15aw!83xd(6nu-@op61hw3nh!q^8+8*=n=hx3l3*gh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = false
 
-ALLOWED_HOSTS = ['.onrender.com']
+ALLOWED_HOSTS = ['colis-dzo1.onrender.com']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
@@ -137,7 +137,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://colis-dzo1.onrender.com'
+]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'  # ou autre selon ton fournisseur
