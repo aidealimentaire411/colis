@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nl!l*u@v15aw!83xd(6nu-@op61hw3nh!q^8+8*=n=hx3l3*gh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = false
+DEBUG = True
 
 ALLOWED_HOSTS = ['colis-dzo1.onrender.com']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
