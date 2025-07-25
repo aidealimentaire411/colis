@@ -8,6 +8,9 @@ from .models import Etudiant, Symbole, AnneeScolaire, Passage
 from datetime import datetime
 from django.core.exceptions import ValidationError
 
+admin.site.site_header = "Administration de Aide Alimentaire des Etudiants"
+admin.site.site_title = "Aide Alimentaire des Etudiants"
+admin.site.index_title = "Interface "
 
 class EtudiantForm(forms.ModelForm):
     class Meta:
